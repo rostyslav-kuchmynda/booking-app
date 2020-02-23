@@ -1,0 +1,32 @@
+.date-picker {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.calendar {
+  margin: 0 1rem;
+  padding: 0;
+  height: 5rem;
+}
+
+.md-48 {
+  font-size: 3.6rem;
+}
+
+.mat-form-field {
+  display: none;
+}
+
+.event-calendar {
+  position: absolute;
+  top: -3.63rem;
+  padding: 0.88rem 5rem;
+  background-color: #eee;
+  font-family: 'OpenSansRegular';
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  border-radius: 0.35rem;
+}

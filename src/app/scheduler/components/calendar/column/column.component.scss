@@ -1,0 +1,63 @@
+$grid: 0.05rem solid #f6f6f6;
+
+.add-event-icon {
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+:host {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  // min-width: 25%;
+}
+
+.column {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 100%;
+  border-left: $grid;
+  border-right: $grid;
+}
+
+.column-header {
+  position: fixed;
+  top: 9rem;
+  align-self: center;
+  z-index: 3;
+  background-color: #ffffff;
+  border-left: #f6f6f6;
+  border-right: #f6f6f6;
+  white-space: normal;
+}
+
+.column-content {
+  margin-top: 6.9rem;
+  flex-grow: 1;
+  background: repeating-linear-gradient(to bottom, #f6f6f6 0 0.15rem, #ffffff 0.15rem 18rem);
+}
+
+.room-name {
+  font-family: 'RalewayExtraBold';
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.add-event-btn {
+  padding: 0;
+  color: white;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 2rem;
+  background-color: #00b8b2;
+  height: 5.6rem;
+  width: 5.6rem;
+  z-index: 3;
+}

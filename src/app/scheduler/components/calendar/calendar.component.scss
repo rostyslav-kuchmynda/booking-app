@@ -1,0 +1,35 @@
+$turquoise: #00b2a9;
+.calendar {
+  position: relative;
+  overflow-x: hidden;
+  height: 312rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 9rem 4rem 0;
+  background-color: #fafafa;
+}
+
+.time {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  font-family: 'OpenSansRegular';
+  height: 2.3rem;
+  width: 100%;
+  left: 6rem;
+  margin-top: 5.8rem;
+}
+
+.timeCircle {
+  width: 2rem;
+  height: 2rem;
+  background-color: $turquoise;
+  border-radius: 50%;
+  box-shadow: 0 0 1.2rem 0 $turquoise;
+}
+
+.currentTimeLine {
+  height: 0.1rem;
+  background-color: $turquoise;
+  width: 100%;
+}

@@ -1,0 +1,18 @@
+:host {
+  z-index: 2;
+}
+
+.status {
+  width: 8.8rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statusText {
+  font-family: 'RalewayExtraBold';
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}

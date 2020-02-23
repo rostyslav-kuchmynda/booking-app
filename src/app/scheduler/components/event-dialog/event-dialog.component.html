@@ -1,0 +1,48 @@
+<div class="event-dialog-container">
+  <div mat-dialog-title class="container-header">
+    <h1 class="header-title">{{ dialogTitle }}</h1>
+    <button mat-button mat-dialog-close class="header-cross" tabindex="-1">
+      <em class="material-icons header-cross-icon">clear</em>
+    </button>
+  </div>
+
+  <mat-divider class="horizontal-line"></mat-divider>
+
+  <form [formGroup]="newEventForm" (ngSubmit)="onSubmit()">
+    <mat-dialog-content>
+      <div class="content-container">
+        <label class="input-label">Event title</label>
+        <mat-form-field appearance="outline">
+          <input matInput formControlName="eventTitle" placeholder="Add a title" />
+        </mat-form-field>
+
+        <label class="input-label">Time</label>
+        <bs-time-range-picker [formGroup]="newEventForm.get('timeRange')"></bs-time-range-picker>
+
+        <label class="input-label">Meeting room</label>
+        <mat-form-field appearance="outline">
+          <mat-select placeholder="Select room" formControlName="meetingRoom">
+            <mat-option *ngFor="let room of rooms" [value]="room.id">{{ room.name }} meeting room</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <label class="input-label">Guests</label>
+        <mat-form-field appearance="outline">
+          <input name="guests" matInput placeholder="Add a guest" disabled="disabled" />
+        </mat-form-field>
+
+        <label class="input-label">Description</label>
+        <mat-form-field appearance="outline">
+          <textarea name="description" matInput formControlName="description" placeholder="Add description"></textarea>
+        </mat-form-field>
+      </div>
+    </mat-dialog-content>
+
+    <mat-dialog-actions>
+      <button mat-raised-button mat-dialog-close color="primary" class="bs-btn" type="submit">Save</button>
+      <button mat-stroked-button mat-dialog-close color="primary" class="bs-btn bs-stroked-btn" type="button">
+        Cancel
+      </button>
+    </mat-dialog-actions>
+  </form>
+</div>

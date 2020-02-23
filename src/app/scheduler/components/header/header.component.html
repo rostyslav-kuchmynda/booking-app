@@ -1,0 +1,8 @@
+<mat-toolbar-row class="header">
+  <div class="header-date">
+    <bs-date-displayer [selectedDate]="date"></bs-date-displayer>
+    <bs-date-switcher [selectedDate]="date" (dateChange)="onDateChange($event)"></bs-date-switcher>
+    <bs-date-picker view="icon" (selectedDate)="onDateChange($event)"></bs-date-picker>
+  </div>
+  <bs-header-settings-gear></bs-header-settings-gear>
+</mat-toolbar-row>

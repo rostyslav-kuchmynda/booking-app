@@ -1,0 +1,35 @@
+:host {
+  z-index: 3;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 4.5rem;
+  line-height: normal;
+  padding: 0.8rem 1.2rem;
+}
+
+p {
+  margin: 0;
+}
+
+.author {
+  font-family: 'OpenSansBold';
+  font-size: 1.8rem;
+  max-width: 90%;
+  overflow: hidden;
+}
+
+.time {
+  font-family: 'OpenSansRegular';
+  font-size: 1.8rem;
+}
+
+@media (min-height: 4.6rem) {
+  .event-card {
+    padding: 0.4rem 1.2rem;
+    flex-flow: column nowrap;
+  }
+}

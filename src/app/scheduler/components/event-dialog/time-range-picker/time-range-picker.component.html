@@ -1,0 +1,8 @@
+<div class="range-picker-container">
+  <bs-date-picker [formControl]="formGroup.get('datePicker')"></bs-date-picker>
+  <div class="range-picker-inner-wrapper">
+    <bs-time-picker [formControl]="formGroup.get('startAtTime')"></bs-time-picker>
+    <span class="horizontal-line"></span>
+    <bs-time-picker [formControl]="formGroup.get('finishAtTime')"></bs-time-picker>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+{
+  "/api/*": {
+    "target": "https://dsx3pgko9232p.cloudfront.net",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

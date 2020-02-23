@@ -1,0 +1,16 @@
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #fafafa;
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}

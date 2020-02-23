@@ -1,0 +1,24 @@
+<div class="delete-dialog-container">
+    <div mat-dialog-title class="container-header">
+        <h1 class="header-title">Set up a default room</h1>
+        <button mat-button mat-dialog-close class="header-cross" tabindex="-1">
+            <em class="material-icons header-cross-icon">clear</em>
+        </button>
+    </div>
+
+    <mat-divider class="horizontal-line"></mat-divider>
+
+    <div class="delete-dialog-content">
+        <mat-radio-group color="primary" class="radio-group">
+            <mat-radio-button class="radio-button" *ngFor="let room of rooms" [value]="room">
+                {{room}} meeting room
+            </mat-radio-button>
+        </mat-radio-group>
+    </div>
+    <mat-dialog-actions>
+        <button mat-raised-button mat-dialog-close color="primary" class="bs-btn" type="submit">Save</button>
+        <button mat-stroked-button mat-dialog-close color="primary" class="bs-btn bs-stroked-btn" type="button">
+            Cancel
+        </button>
+    </mat-dialog-actions>
+</div>

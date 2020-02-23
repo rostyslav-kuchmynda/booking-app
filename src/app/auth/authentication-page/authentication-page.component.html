@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="inner-container">
+    <img class="container-logo" src="../../../assets/tm-logo/tm-logo.svg" alt="tech-magic-icon" />
+    <div class="header">
+      <span class="header-tm">TM</span>
+      <h2 class="header-title">Meeting Room Booking</h2>
+    </div>
+  </div>
+
+  <div class="auth-container">
+    <p class="auth-message">Authorize with your <span class="auth-tm">@techmagic.co</span> email</p>
+    <div class="signin-btn-container">
+      <form [formGroup]="userDataGroup" (ngSubmit)="onSubmit()">
+        <div class="form-container">
+          <mat-form-field appearance="outline">
+            <mat-label>Enter your email</mat-label>
+            <input matInput formControlName="mail" placeholder="techmagic@example.com" />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Enter your password</mat-label>
+            <input matInput formControlName="pass" [type]="hide ? 'password' : 'text'" />
+            <button
+              mat-icon-button
+              matSuffix
+              (click)="hide = !hide"
+              [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide"
+              type="button"
+            >
+              <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+          </mat-form-field>
+          <button mat-raised-button color="primary" class="signin-btn" type="submit">
+            Sign In
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p class="footer-copy">&copy; techmagic 2016-2020</p>
+  </div>
+</div>

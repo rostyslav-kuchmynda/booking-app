@@ -1,0 +1,27 @@
+$turquoise: #00b2a9;
+
+:host {
+  width: 20%;
+  max-width: 5rem;
+  margin: 6rem 2rem 0 0;
+}
+
+.timeline {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 306rem;
+}
+
+.hourStamp {
+  margin: 0;
+  color: #7a7a7a;
+  font-size: 1.8rem;
+  font-family: 'OpenSansRegular';
+}
+.coloredHourStamp {
+  background-color: #fafafa;
+  color: $turquoise;
+}

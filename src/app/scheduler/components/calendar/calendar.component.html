@@ -1,0 +1,13 @@
+<bs-header></bs-header>
+<div class="calendar">
+  <bs-timeline></bs-timeline>
+  <div *ngIf="todayDisplayed$ | async" class="time" [ngStyle]="timePosition">
+    <div class="timeCircle"></div>
+    <div class="currentTimeLine"></div>
+  </div>
+  <bs-column
+    [events$]="eventsArray$ | filterEvents: room"
+    [selectedRoom]="room"
+    *ngFor="let room of roomsToDisplay"
+  ></bs-column>
+</div>

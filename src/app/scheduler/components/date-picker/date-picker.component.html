@@ -1,0 +1,20 @@
+<div class="date-picker">
+  <mat-form-field class="example-full-width">
+    <input
+      [value]="date"
+      #matPickerInput
+      matInput
+      [matDatepicker]="picker"
+      (dateChange)="onDateChange('change', $event)"
+    />
+    <mat-datepicker touchUi #picker></mat-datepicker>
+  </mat-form-field>
+
+  <button *ngIf="view === 'icon'" mat-button class="calendar" type="button" (click)="picker.open()">
+    <em class=" material-icons md-48">event</em>
+  </button>
+
+  <button *ngIf="view === 'date'" mat-button class="event-calendar" type="button" (click)="picker.open()">
+    {{ matPickerInput.value | date: 'EEE, d MMM' }}
+  </button>
+</div>

@@ -1,0 +1,175 @@
+$turtoise: (
+  50: #e0f6f5,
+  100: #b3e8e5,
+  200: #80d9d4,
+  300: #4dc9c3,
+  400: #26beb6,
+  500: #00b2a9,
+  600: #00aba2,
+  700: #00a298,
+  800: #00998f,
+  900: #008a7e,
+  A100: #b6fff8,
+  A200: #83fff3,
+  A400: #50ffee,
+  A700: #36ffec,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$turtoise-two: (
+  50: #e0f6f6,
+  100: #b3eae8,
+  200: #80dcd9,
+  300: #4dcdc9,
+  400: #26c3be,
+  500: #00b8b2,
+  600: #00b1ab,
+  700: #00a8a2,
+  800: #00a099,
+  900: #00918a,
+  A100: #bdfffb,
+  A200: #8afff8,
+  A400: #57fff5,
+  A700: #3dfff3,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+$dark-aquamarine: (
+  50: #e0efee,
+  100: #b3d6d5,
+  200: #80bbb9,
+  300: #4d9f9c,
+  400: #268b87,
+  500: #007672,
+  600: #006e6a,
+  700: #00635f,
+  800: #005955,
+  900: #004642,
+  A100: #7afff5,
+  A200: #47fff1,
+  A400: #14ffee,
+  A700: #00fae7,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$ruby: (
+  50: #fbe0ea,
+  100: #f6b3ca,
+  200: #f080a6,
+  300: #e94d82,
+  400: #e52668,
+  500: #e0004d,
+  600: #dc0046,
+  700: #d8003d,
+  800: #d30034,
+  900: #cb0025,
+  A100: #fff3f4,
+  A200: #ffc0c7,
+  A400: #ff8d9a,
+  A700: #ff7484,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+@font-face {
+  font-family: 'RalewayRegular';
+  src: url('../src/assets/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'RalewayBlack';
+  src: url('../src/assets/fonts/Raleway/Raleway-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RalewayExtraBold';
+  src: url('../src/assets/fonts/Raleway/Raleway-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RalewayRegular';
+  src: url('../src/assets/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url('../src/assets/fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url('../src/assets/fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+}

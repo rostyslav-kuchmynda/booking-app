@@ -1,0 +1,6 @@
+<button mat-button [matMenuTriggerFor]="menu"><mat-icon>settings</mat-icon></button>
+<mat-menu #menu="matMenu" xPosition="before">
+  <a (click)="onSignOut()" mat-menu-item>Sign Out</a>
+  <!-- <a (click)="openDefaultRoomDialog()" mat-menu-item>Default room</a> -->
+  <a (click)="openRoomListDialog()" mat-menu-item>Number of rooms</a>
+</mat-menu>

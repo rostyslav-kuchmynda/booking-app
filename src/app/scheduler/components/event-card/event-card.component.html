@@ -1,0 +1,4 @@
+<div class="event-card" (click)="onCardClick()" [ngStyle]="cardStyling">
+  <p class="author"> {{ card.title }}</p>
+  <p class="time">{{ card.start | date: 'HH : mm' }} - {{ card.end | date: 'HH : mm' }}</p>
+</div>

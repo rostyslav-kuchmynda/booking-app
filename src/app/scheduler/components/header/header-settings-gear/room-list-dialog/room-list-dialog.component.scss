@@ -1,0 +1,60 @@
+.room-list-container {
+  margin: 0rem 1.92rem 3.2rem 3.2rem;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+}
+
+.header-title {
+  font-family: 'RalewayExtraBold';
+  font-size: 3.2rem;
+  padding-right: 6.4rem;
+}
+
+.header-cross {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.header-cross-icon {
+  font-size: 4rem;
+}
+
+.horisontal-line {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #dbdbdb;
+  margin-bottom: 3.2rem;
+}
+
+.dialog-content {
+  margin-bottom: 2.72rem;
+  height: 45rem;
+}
+.mat-list-text {
+  font-size: 1.92rem;
+  font-family: 'OpenSansRegular';
+}
+
+.mat-pseudo-checkbox {
+  transform: scale(1.5);
+}
+
+.bs-btn {
+  font-family: 'RalewayExtraBold';
+  padding: 0.8rem 3rem;
+  font-size: 2.08rem;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+.mat-stroked-button.bs-stroked-btn[color='primary'] {
+  border: 0.16rem solid #007672;
+  padding: 0.8rem 2.24rem;
+}

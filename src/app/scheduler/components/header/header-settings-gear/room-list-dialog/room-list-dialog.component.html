@@ -1,0 +1,30 @@
+<div class="room-list-container">
+  <div mat-dialog-title class="container-header">
+    <h1 class="header-title">Set up a number of rooms (max 4)</h1>
+    <button mat-button mat-dialog-close class="header-cross" tabindex="-1">
+      <i class="material-icons header-cross-icon">clear</i>
+    </button>
+  </div>
+
+  <mat-divider class="horisontal-line"></mat-divider>
+
+  <mat-dialog-content>
+    <mat-selection-list #roomOptions class="dialog-content" tabindex="-1" [(ngModel)]="selectedRooms">
+      <mat-list-option
+        #roomOption
+        checkboxPosition="before"
+        color="primary"
+        *ngFor="let room of rooms"
+        [value]="room.id"
+        [disabled]="roomOptions.selectedOptions.selected.length === maxRooms && !roomOption.selected"
+      >
+        {{ room.name }} meeting room
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+    <button mat-raised-button mat-dialog-close color="primary" class="bs-btn" (click)="onSaveRooms()">Save</button>
+    <button mat-stroked-button mat-dialog-close color="primary" class="bs-btn bs-stroked-btn">Cancel</button>
+  </mat-dialog-actions>
+</div>

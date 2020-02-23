@@ -1,0 +1,19 @@
+@import '~@angular/material/theming';
+@import './variables.scss';
+@include mat-core();
+
+$booking-app-dark-primary: mat-palette($dark-aquamarine);
+$booking-app-dark-accent: mat-palette($ruby);
+$booking-app-dark-warn: mat-palette($ruby);
+$booking-app-dark-theme: mat-light-theme($booking-app-dark-primary, $booking-app-dark-accent, $booking-app-dark-warn);
+
+@include angular-material-theme($booking-app-dark-theme);
+
+$booking-app-light-primary: mat-palette($turtoise-two);
+$booking-app-light-accent: mat-palette($ruby);
+$booking-app-light-warn: mat-palette($ruby);
+$booking-app-light-theme: mat-light-theme($booking-app-light-primary, $booking-app-light-accent, $booking-app-light-warn);
+
+.booking-app-light-theme {
+  @include angular-material-theme($booking-app-light-theme);
+}

@@ -1,0 +1,73 @@
+.event-dialog-container {
+  margin: 0rem 1.9rem 3.2rem 3.2rem;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title {
+  font-family: 'RalewayExtraBold';
+  font-size: 3.2rem;
+  padding-right: 6.4rem;
+}
+
+.header-cross {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.header-cross-icon {
+  font-size: 4rem;
+}
+
+.horizontal-line {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #dbdbdb;
+  margin-bottom: 3.2rem;
+}
+
+.dialog-content {
+  margin-bottom: 2.7rem;
+  height: 45rem;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  margin: 3.2rem 0;
+  width: 70rem;
+}
+
+.content-container > * {
+  width: 100%;
+}
+
+.input-label {
+  font-family: 'OpenSansBold';
+  font-size: 1.65rem;
+}
+
+mat-form-field.mat-form-field {
+  font-size: 1.44rem;
+  font-family: 'OpenSansRegular';
+}
+
+.bs-btn {
+  font-family: 'RalewayExtraBold';
+  padding: 0.8rem 3rem;
+  font-size: 2rem;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+.mat-stroked-button.bs-stroked-btn[color='primary'] {
+  border: 0.16rem solid #007672;
+  padding: 0.8rem 2.2rem;
+}
